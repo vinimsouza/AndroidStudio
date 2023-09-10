@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="16dp">
+    <ImageView
+        android:layout_width="75dp"
+        android:layout_height="75dp"
+        android:src="@mipmap/ic_launcher"
+        android:id="@+id/image" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Título Principal"
+            android:textColor="#000"
+            android:layout_margin="5dp"
+            android:id="@+id/textoNome" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Subtítulo Principal"
+            android:textColor="#a9a9a9"
+            android:layout_margin="5dp"
+            android:textSize="15dp"
+            android:id="@+id/textoDescricao" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/botao"
+            android:layout_width="281dp"
+            android:layout_height="78dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="118dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="@color/black"
+            android:text="CRIAR NOVO CONTATO"
+            android:textSize="25dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

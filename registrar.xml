@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/registrarTitulo"
+        android:text="Registrar"
+        android:textSize="80dp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_margin="25dp"/>
+
+
+    <EditText
+        android:id="@+id/nomeNovo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/registrarTitulo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Nome"
+        android:padding="20dp"
+        android:textColor="#000" />
+
+    <EditText
+        android:id="@+id/idade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nomeNovo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Idade"
+        android:padding="20dp"
+        android:textColor="#000" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/profissaoNovo"
+        android:layout_below="@+id/idade"
+        android:hint="Profissão"
+        android:textColor="#000"
+        android:layout_margin="10dp"
+        android:padding="20dp"/>
+
+    <EditText
+        android:id="@+id/resumoNovo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profissaoNovo"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Resumo"
+        android:padding="20dp"
+        android:textColor="#000" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/botaoNovo"
+        android:layout_width="145dp"
+        android:layout_height="122dp"
+        android:layout_below="@+id/profissaoNovo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="118dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:backgroundTint="@color/black"
+        android:text="REGISTRAR"
+        android:textSize="25dp" />
+</RelativeLayout>
